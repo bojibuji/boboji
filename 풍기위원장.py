@@ -1,6 +1,5 @@
-import discord, asyncio, openpyxl, re
+import discord, asyncio, openpyxl, os, re
 client = discord.Client()
-token="OTc3NDk5MDI0MjM0MDIwODk0.GzYraM.UqDMXBLSWItospnaurBUN2EEBdXmLq4kb-xj3o"
 
 야한말=["뷰지","쥬지","자지","보지","섹스","섹섹보","섹슨","임신","교미","교배","음탕" \
      "지털","창녀","챙녀","갈보","핑보","유륜","유두","쎅스","쎅쓰","섹쓰","색스","색슨","항문" \
@@ -46,5 +45,5 @@ async def on_message(message):
             await 메세지전송("돌박꼼 쟁건다?")
             통제변수3 += 1
             
-
-client.run(token)
+access_token=os.environ["BOT_TOKEN"]
+client.run(access_token)
