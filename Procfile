@@ -1,0 +1,1 @@
+worker: python 풍기위원장.py
